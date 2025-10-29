@@ -90,39 +90,39 @@ export default function Contact() {
       <div className="">
         <form>
           <FormGroup>
-            <Label htmlFor="name" text="名前" />
+            <Label htmlFor="name">名前</Label>
             <div className="flex-1">
               <Input
                 type="text"
                 id="name"
                 value={form.name}
-                onChangeHandler={handleChange}
+                onChange={handleChange}
                 disabled={isSubmitting}
               />
               <ErrorMessage message={errors.name} />
             </div>
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="email" text="メールアドレス" />
+            <Label htmlFor="email">メールアドレス</Label>
             <div className="flex-1">
               <Input
                 type="email"
                 id="email"
                 value={form.email}
-                onChangeHandler={handleChange}
+                onChange={handleChange}
                 disabled={isSubmitting}
               />
               <ErrorMessage message={errors.email} />
             </div>
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="message" text="本文" />
+            <Label htmlFor="message">本文</Label>
             <div className="flex-1">
               <TextArea
                 id="message"
                 rows={8}
                 value={form.message}
-                onChangeHandler={handleChange}
+                onChange={handleChange}
                 disabled={isSubmitting}
               />
               <ErrorMessage message={errors.message} />
